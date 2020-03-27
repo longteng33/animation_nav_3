@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        .container{
+            margin-top: 20px;
+            font-size: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container .item{
+            display: inline-block;
+            width: 200px;
+            height: 356px;
+            border: 10px solid #db6b0e;
+            border-radius: 30px;
+            background: rgb(65, 65, 88);
+            transition: .4s;
+            overflow: hidden;
+        }
+        .container .item:not(:first-child){
+            margin-left: -150px;
+        }
+        .container .item:hover{
+            transform: translateY(-20px);
+        }
+        .container .item:hover~.item{
+            transform: translateX(150px);
+        }
+        .container .item img{
+            width: 100%;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href= "CSS文件路径"> -->
+</head>
+    
+<body>
+    <div class="container">
+        <div>
+            <div class="item">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        
+    
+    
+    </script>
+</body>
+</html>
